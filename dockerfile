@@ -1,5 +1,4 @@
-FROM ubuntu:18.04
+FROM openjdk:11-jre-slim
 RUN mkdir /kafka
-COPY bin kafka/bin
-COPY config /kafka/config
+COPY . kafka
 RUN dir kafka
